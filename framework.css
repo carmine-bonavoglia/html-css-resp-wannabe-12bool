@@ -1,65 +1,68 @@
-/* regole di defaul */
+/* Regole Globali */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .row::after{
   display: table;
   content:"";
   clear: both;
 }
+
 .row [class*="col-"]{
   float: left;
 }
 
 
+/* Framework */
+/* Media LG */
+@media screen and (min-width:992px)
+  .col-lg-1 {
+    width:calc(100% / 12 * 1)
+  }
+  .col-lg-2{
+    width:calc(100% / 12 * 2)
+  }
+  .col-lg-3{
+    width:calc(100% / 12 * 3)
+  }
+  .col-lg-4{
+    width:calc(100% / 12 * 4)
+  }
+  .col-lg-5{
+    width:calc(100% / 12 * 5)
+  }
+  .col-lg-6{
+    width:calc(100% / 12 * 6)
+  }
+  .col-lg-7{
+    width:calc(100% / 12 * 7)
+  }
+  .col-lg-8{
+    width:calc(100% / 12 * 8)
+  }
+  .col-lg-9{
+    width:calc(100% / 12 * 9)
+  }
+  .col-lg-10{
+    width:calc(100% / 12 * 10)
+  }
+  .col-lg-11{
+    width:calc(100% / 12 * 11)
+  }
+  .col-lg-12{
+    width:calc(100% / 12 * 12)
+  }
+  .col-lg-display-none{
+    display: none;
+  }
+}
 
+/* Media MD */
 
-
-
-
-/* WARNING FRAMEWORK */
-.col-lg-1 {
-  width:calc(100% / 12 * 1)
-}
-.col-lg-2{
-  width:calc(100% / 12 * 2)
-}
-.col-lg-3{
-  width:calc(100% / 12 * 3)
-}
-.col-lg-4{
-  width:calc(100% / 12 * 4)
-}
-.col-lg-5{
-  width:calc(100% / 12 * 5)
-}
-.col-lg-6{
-  width:calc(100% / 12 * 6)
-}
-.col-lg-7{
-  width:calc(100% / 12 * 7)
-}
-.col-lg-8{
-  width:calc(100% / 12 * 8)
-}
-.col-lg-9{
-  width:calc(100% / 12 * 9)
-}
-.col-lg-10{
-  width:calc(100% / 12 * 10)
-}
-.col-lg-11{
-  width:calc(100% / 12 * 11)
-}
-.col-lg-12{
-  width:calc(100% / 12 * 12)
-}
-.col-lg-display-none{
-  display: none;
-}
-/* WARNING MEDIA MD */
 @media screen and (min-width:768px) and (max-width:992px) {
   .col-md-1{
     width: calc(100% / 12);
@@ -102,7 +105,9 @@
   }
 }
 
-/* WARNING MEDIA XS */
+
+/* Media XS */
+
 @media screen and (max-width:768px) {
   .col-xs-1{
     width: calc(100% / 12);
@@ -144,7 +149,10 @@
     display: none;
   }
 }
-/* FRAMEWORK OFFSET */
+
+
+/* Offset LG */
+
 .col-lg-offset-1{
   margin-left:calc(100% / 12 * 1)
 }
@@ -181,6 +189,9 @@
 .col-lg-offset-12{
   margin-left:calc(100% / 12 * 12)
 }
+
+
+/* Offset MD */
 
 @media screen and (min-width:768px) and (max-width:992px){
   .col-md-offset-1{
@@ -220,6 +231,9 @@
     margin-left:calc(100% / 12 * 12)
   }
 }
+
+
+/* Offset XS */
 
 @media screen and (max-width:768px){
   .col-xs-offset-1{
